@@ -1,0 +1,130 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\xiaod\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\xiaod\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (Oracle Corporation Java 17.0.2)
+[debug]       Load.loadUnit: plugins took 76.4859ms
+[debug]       Load.loadUnit: defsScala took 0.4197ms
+[debug] [Loading] Scanning directory C:\Users\xiaod\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\xiaod\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 14.5235 ms
+[debug]           Load.resolveProject(global-plugins) took 45.2257ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\xiaod\.sbt\1.0\plugins, plugins: List(<none>))) took 79.5341ms
+[debug] [Loading] Done in C:\Users\xiaod\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 100.9189ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.23ms
+[debug]     Load.loadUnit(file:/C:/Users/xiaod/.sbt/1.0/plugins/, ...) took 186.4674ms
+[debug]   Load.apply: load took 396.2585ms
+[debug]   Load.apply: resolveProjects took 10.7926ms
+[debug]   Load.apply: finalTransforms took 395.6843ms
+[debug]   Load.apply: config.delegates took 14.3409ms
+[debug]   Load.apply: Def.make(settings)... took 1317.9788ms
+[debug]   Load.apply: structureIndex took 666.2538ms
+[debug]   Load.apply: mkStreams took 1.431ms
+[info] loading global plugins from C:\Users\xiaod\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 4421.2217ms
+[debug]           Load.loadUnit: plugins took 18.801ms
+[debug]           Load.loadUnit: defsScala took 0.0029ms
+[debug] [Loading] Scanning directory C:\Users\xiaod\Desktop\it5100adb\project
+[debug]             Load.loadUnit: mkEval took 4.0646ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\xiaod\Desktop\it5100adb\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.3593 ms
+[info] loading settings for project it5100adb-build from idea.sbt ...
+[debug]               Load.resolveProject(it5100adb-build) took 2.2663ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id it5100adb-build, base: C:\Users\xiaod\Desktop\it5100adb\project, plugins: List(<none>))) took 5.064ms
+[debug] [Loading] Done in C:\Users\xiaod\Desktop\it5100adb\project, returning: (it5100adb-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 117.5657ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.9144ms
+[debug]         Load.loadUnit(file:/C:/Users/xiaod/Desktop/it5100adb/project/, ...) took 142.0518ms
+[debug]       Load.apply: load took 143.1631ms
+[debug]       Load.apply: resolveProjects took 0.0798ms
+[debug]       Load.apply: finalTransforms took 6.434ms
+[debug]       Load.apply: config.delegates took 0.3062ms
+[debug]       Load.apply: Def.make(settings)... took 120.3073ms
+[debug]       Load.apply: structureIndex took 22.5433ms
+[debug]       Load.apply: mkStreams took 0.0029ms
+[info] loading project definition from C:\Users\xiaod\Desktop\it5100adb\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 752.3361ms
+[debug]     Load.loadUnit: defsScala took 0.0033ms
+[debug] [Loading] Scanning directory C:\Users\xiaod\Desktop\it5100adb
+[debug]       Load.loadUnit: mkEval took 0.2121ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\xiaod\Desktop\it5100adb, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.0323 ms
+[info] loading settings for project it5100adb from build.sbt ...
+[debug]         Load.resolveProject(it5100adb) took 27.6461ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id it5100adb, base: C:\Users\xiaod\Desktop\it5100adb, plugins: List(<none>))) took 30.6494ms
+[debug] [Loading] Done in C:\Users\xiaod\Desktop\it5100adb, returning: (it5100adb)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2809.7272ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.1048ms
+[debug]   Load.loadUnit(file:/C:/Users/xiaod/Desktop/it5100adb/, ...) took 3573.9537ms
+[debug] Load.apply: load took 3577.0412ms
+[debug] Load.apply: resolveProjects took 0.1064ms
+[debug] Load.apply: finalTransforms took 33.3261ms
+[debug] Load.apply: config.delegates took 0.2819ms
+[debug] Load.apply: Def.make(settings)... took 89.996ms
+[debug] Load.apply: structureIndex took 20.5922ms
+[debug] Load.apply: mkStreams took 0.0021ms
+[info] set current project to it5100adb (in build file:/C:/Users/xiaod/Desktop/it5100adb/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(idea-shell, None, None)
