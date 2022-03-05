@@ -17,7 +17,7 @@ lazy val slick = taskKey[Seq[File]]("Generate Tables.scala")
 slick := {
     val dir = (Compile / sourceManaged) value
     val outputDir = dir / "slick"
-    val url = "jdbc:postgresql://[::1]:5433/postgres;INIT=runscript from 'src/main/sql/createTables.sql'" // connection info
+    val url = "jdbc:postgresql://[::1]:5433/postgres?user=postgres&password=123;INIT=runscript from 'src/main/sql/createTables.sql'" // connection info
     val jdbcDriver = "org.postgresql.Driver"
     val slickDriver = "slick.jdbc.PostgresProfile"
     val pkg = "demo"

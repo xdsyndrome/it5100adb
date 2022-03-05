@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mrunning slick.codegen.SourceCodeGenerator slick.jdbc.PostgresProfile org.postgresql.Driver "jdbc:postgresql://[::1]:5433/postgres;INIT=runscript from 'src/main/sql/createTables.sql'" C:\Users\xiaod\Desktop\it5100adb\target\scala-2.13\src_managed\main\slick demo[0m
+[0m[[0m[0minfo[0m] [0m[0mrunning slick.codegen.SourceCodeGenerator slick.jdbc.PostgresProfile org.postgresql.Driver "jdbc:postgresql://[::1]:5433/postgres?user=postgres&password=123;INIT=runscript from 'src/main/sql/createTables.sql'" C:\Users\xiaod\Desktop\it5100adb\target\scala-2.13\src_managed\main\slick demo[0m
 [0m[[0m[0mdebug[0m] [0m[0m  Classpath:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\xiaod\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\xiaod\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\slick\slick_2.13\3.3.3\slick_2.13-3.3.3.jar[0m
@@ -58,28 +58,3 @@
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\xiaod\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-paranamer\2.10.1\jackson-module-paranamer-2.10.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\xiaod\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\3.10.0\protobuf-java-3.10.0.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\xiaod\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar[0m
-[0m[[0m[31merror[0m] [0m[0morg.postgresql.util.PSQLException: FATAL: role "xiaod" does not exist[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:691)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:207)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:65)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:149)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:35)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:47)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc42.AbstractJdbc42Connection.<init>(AbstractJdbc42Connection.java:21)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.jdbc42.Jdbc42Connection.<init>(Jdbc42Connection.java:28)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.Driver.makeConnection(Driver.java:415)[0m
-[0m[[0m[31merror[0m] [0m[0m	at org.postgresql.Driver.connect(Driver.java:282)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.DriverDataSource.getConnection(DriverDataSource.scala:101)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.DataSourceJdbcDataSource.createConnection(JdbcDataSource.scala:68)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.JdbcBackend$BaseSession.<init>(JdbcBackend.scala:494)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.JdbcBackend$DatabaseDef.createSession(JdbcBackend.scala:46)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.JdbcBackend$DatabaseDef.createSession(JdbcBackend.scala:37)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.basic.BasicBackend$DatabaseDef.acquireSession(BasicBackend.scala:250)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.basic.BasicBackend$DatabaseDef.acquireSession$(BasicBackend.scala:249)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.jdbc.JdbcBackend$DatabaseDef.acquireSession(JdbcBackend.scala:37)[0m
-[0m[[0m[31merror[0m] [0m[0m	at slick.basic.BasicBackend$DatabaseDef$$anon$3.run(BasicBackend.scala:275)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:834)[0m
-[0m[[0m[31merror[0m] [0m[0m([31mslick[0m) org.postgresql.util.PSQLException: FATAL: role "xiaod" does not exist[0m
