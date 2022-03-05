@@ -7,6 +7,7 @@ import scala.concurrent.duration.Duration
 
 object Main extends App {
 	val db = Database.forConfig("mydb")
+	/*
 	val lines = new ArrayBuffer[Any]()
 	def println(s: Any) = lines += s
 
@@ -143,5 +144,6 @@ object Main extends App {
 		lines.foreach(Predef.println _)
 	} finally db.close
 	//#setup
+	 */
 }
 
