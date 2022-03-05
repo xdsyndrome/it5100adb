@@ -20,7 +20,7 @@ slick := {
     val url = "jdbc:postgresql://[::1]:5433/postgres?user=postgres&password=123;INIT=runscript from 'src/main/sql/createTables.sql'" // connection info
     val jdbcDriver = "org.postgresql.Driver"
     val slickDriver = "slick.jdbc.PostgresProfile"
-    val pkg = "demo"
+    val pkg = "models"
 
     val cp = (Compile / dependencyClasspath) value
     val s = streams value
