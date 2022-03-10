@@ -7,11 +7,74 @@ import scala.concurrent.duration.Duration
 
 object Main extends App {
 	val db = Database.forConfig("mydb")
-	/*
-	val lines = new ArrayBuffer[Any]()
-	def println(s: Any) = lines += s
+	println(db.source)
 
-	//#tables
+	class Activevehicles(tag: Tag) extends Table[(String, String, String, Double)](tag, "ACTIVEVEHICLES") {
+		def id = column[String]("VEHICLE_ID", O.PrimaryKey)
+		def route_id = column[String]("ROUTE_ID")
+		def parcel_id = column[String]("PARCEL_ID")
+		def storage = column[Double]("STORAGE")
+		def * = (id, route_id, parcel_id, storage)
+	}
+
+	val activevehicles = TableQuery[Activevehicles]
+
+	class Parcels(tag: Tag) extends Table[(String, String, String, Double)](tag, "PARCELS") {
+		def parcel_id = column[String]("PARCEL_ID", O.PrimaryKey)
+		def pickup_location = column[String]("PICKUP_LOCATION")
+		def destination = column[String]("DESTINATION")
+		def weight = column[Double]("WEIGHT")
+		def * = (parcel_id, pickup_location, destination, weight)
+	}
+
+	val parcels = TableQuery[Parcels]
+
+	class Routes(tag: Tag) extends Table[(String, String)](tag, "ROUTES") {
+		def route_id = column[String]("ROUTE_ID", O.PrimaryKey)
+		def stops = column[String]("STOPS")
+		def * = (route_id, stops)
+	}
+
+	val routes = TableQuery[Routes]
+
+	class Stops(tag: Tag) extends Table[(String, String)](tag, "STOPS") {
+		def stop_name = column[String]("STOP_NAME", O.PrimaryKey)
+		def coordinates = column[String]("COORDINATES")
+		def * = (stop_name, coordinates)
+	}
+
+	val stops = TableQuery[Stops]
+
+	class Vehicles(tag: Tag) extends Table[(String, Double)](tag, "VEHICLES") {
+		def vehicle_id = column[String]("VEHICLE_ID", O.PrimaryKey)
+		def total_storage = column[Double]("TOTAL_STORAGE")
+		def * = (vehicle_id, total_storage)
+	}
+
+	val vehicles = TableQuery[Vehicles]
+
+	// Connect to the database and execute the following block within a session
+	//#setup
+	try {
+		//#setup
+
+		//#create
+		val setup = DBIO.seq(
+			// Create the tables, including primary and foreign keys
+			(activevehicles.schema ++ parcels.schema ++ routes.schema ++ stops.schema ++ vehicles.schema).create,
+
+			parcels += ("P1", "L1","L3", 40.0),
+			parcels += ("P2", "L2","L3", 50.0),
+
+			activevehicles += ("A1","R1","P1", 100.0)
+		)
+
+		val setupFuture = db.run(setup)
+		Await.result(setupFuture, Duration.Inf)
+	} finally db.close
+	//#setup
+
+	/*
 	// Definition of the SUPPLIERS table
 	class Suppliers(tag: Tag) extends Table[(Int, String, String, String, String, String)](tag, "SUPPLIERS") {
 		def id = column[Int]("SUP_ID", O.PrimaryKey) // This is the primary key column
@@ -37,7 +100,6 @@ object Main extends App {
 		def supplier = foreignKey("SUP_FK", supID, suppliers)(_.id)
 	}
 	val coffees = TableQuery[Coffees]
-	//#tables
 
 	// Connect to the database and execute the following block within a session
 	//#setup
@@ -141,9 +203,8 @@ object Main extends App {
 		}
 		//#setup
 		Await.result(resultFuture, Duration.Inf)
-		lines.foreach(Predef.println _)
 	} finally db.close
 	//#setup
-	 */
+	*/
 }
 
