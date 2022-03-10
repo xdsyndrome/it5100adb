@@ -1,33 +1,19 @@
-CREATE TABLE activevehicles (
-  active_vehicle_id varchar(256) NOT NULL,
-  route_id varchar(256) NOT NULL,
-  parcel_id varchar(256) NOT NULL,
-  storage double_precision NOT NULL
+CREATE TABLE activevehicles(
+    active_vehicle_id varchar(256) NOT NULL,
+    route_id varchar(256) NOT NULL,
+    parcel_id varchar(256) NOT NULL
 );
 
-CREATE TABLE parcel (
+CREATE TABLE parcel(
   parcel_id varchar(256) NOT NULL,
   pickup_location varchar(256) NOT NULL,
-  destination varchar(256) NOT NULL,
-  weight double_precision NOT NULL
+  destination varchar(256) NOT NULL
 );
-
--- --------------------------------------------------------
-
---
--- Table structure for table `route`
---
 
 CREATE TABLE route (
   route_id varchar(256) NOT NULL,
   stops varchar(256) NOT NULL
 );
-
--- --------------------------------------------------------
-
---
--- Table structure for table `stop`
---
 
 CREATE TABLE stop (
   stop_name varchar(256) NOT NULL,
@@ -39,10 +25,9 @@ CREATE TABLE stop (
 --
 -- Table structure for table `vehicle`
 --
-
+/*
 CREATE TABLE vehicle (
-    vehicle_id varchar(256) NOT NULL,
-    total_storage double_precision NOT NULL
+    vehicle_id varchar(256) NOT NULL
 );
 
 ALTER TABLE activevehicles ADD PRIMARY KEY (active_vehicle_id);
@@ -64,3 +49,4 @@ ALTER TABLE vehicle ADD PRIMARY KEY (`vehicle_id`);
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+*/

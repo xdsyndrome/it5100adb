@@ -1,2 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\xiaod\Desktop\it5100adb\src\main\scala\Main.scala:66:21: too many arguments (found 4, expected 4-tuple) for method +=: (value: (String, String, String, Float)): slick.sql.FixedSqlAction[Int,slick.dbio.NoStream,slick.dbio.Effect.Write][0m
+[0m[[0m[31merror[0m] [0m[0m			parcels += ("P1","L1","L3", 40.0),[0m
+[0m[[0m[31merror[0m] [0m[0m			                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\xiaod\Desktop\it5100adb\src\main\scala\Main.scala:67:30: too many arguments (found 4, expected 4-tuple) for method +=: (value: (String, String, String, Float)): slick.sql.FixedSqlAction[Int,slick.dbio.NoStream,slick.dbio.Effect.Write][0m
+[0m[[0m[31merror[0m] [0m[0m		  	activevehicles += ("A1","R1","P1", 100.0),[0m
+[0m[[0m[31merror[0m] [0m[0m		  	                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

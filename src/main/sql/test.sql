@@ -1,0 +1,6 @@
+create table IF NOT EXISTS "COMPUTERS" ("ID" INTEGER NOT NULL,"NAME" VARCHAR NOT NULL,"MANUFACTURER_ID" INTEGER NOT NULL);
+create table IF NOT EXISTS "COMPANIES" ("ID" INTEGER NOT NULL,"NAME" VARCHAR NOT NULL);
+
+insert into "COMPANIES" values (1,'Apple Inc.');
+insert into "COMPANIES" values (2,'Thinking Machines');
+

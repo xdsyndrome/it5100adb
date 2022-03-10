@@ -9,7 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/scala" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.13/src_managed/main" isTestSource="false" generated="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../target" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/bg-jobs" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/global-logging" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/scala-3.1.1" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/streams" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/task-temp-directory" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -45,7 +49,7 @@
     <orderEntry type="library" name="sbt: com.typesafe.play:play-streams_2.13:2.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.play:play_2.13:2.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.play:twirl-api_2.13:1.5.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.typesafe.slick:slick-codegen_2.13:3.3.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.slick:slick-codegen_2.13:3.3.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.slick:slick-hikaricp_2.13:3.3.2:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.slick:slick_2.13:3.3.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe:config:1.4.0:jar" level="project" />
